@@ -1,7 +1,7 @@
 
 // var rootCas = require('ssl-root-cas').create();
 // require('https').globalAgent.options.ca = rootCas;
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //not safe, but working for now
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //not safe, but working for nowy
 const express = require('express');
 const axios = require('axios');
 
