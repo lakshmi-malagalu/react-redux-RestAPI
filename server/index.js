@@ -4,8 +4,13 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //not safe, but working for nowy
 const express = require('express');
 const axios = require('axios');
+const path = require('path');
+//const cors = require('cors');
 
 const app = express();
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
+//app.use(cors());
 
 app.get('/', (req, res) => { 
  res.send("<h1>Landing page</h1>");
